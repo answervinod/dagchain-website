@@ -80,7 +80,6 @@ export function WelcomeScreen({ onComplete }: WelcomeScreenProps) {
             style={{ 
               width: '100%', 
               height: '100%',
-              filter: 'hue-rotate(290deg) saturate(1.3) brightness(1.15) contrast(1.1)',
               transform: 'translateZ(0)',
               WebkitTransform: 'translateZ(0)',
               backfaceVisibility: 'hidden',
