@@ -73,24 +73,13 @@ export function WelcomeScreen({ onComplete }: WelcomeScreenProps) {
         >
           <DotLottieReact
             ref={lottieRef}
-            src="https://lottie.host/67b33816-706d-4eec-8cd6-0a81145268cc/EjVNCFAeYw.lottie"
+            src="https://lottie.host/4a49f33e-46a6-4f0e-bb9c-c3fb438163c0/JQKvjHaMMM.lottie"
             loop={true}
             autoplay
             speed={1}
             style={{ 
               width: '100%', 
-              height: '100%',
-              filter: 'grayscale(100%)',
-              transform: 'translate3d(0, 0, 0)',
-              WebkitTransform: 'translate3d(0, 0, 0)',
-              backfaceVisibility: 'hidden',
-              WebkitBackfaceVisibility: 'hidden',
-              transformStyle: 'preserve-3d',
-              WebkitTransformStyle: 'preserve-3d',
-              willChange: 'auto',
-              imageRendering: 'crisp-edges',
-              WebkitFontSmoothing: 'subpixel-antialiased',
-              isolation: 'isolate'
+              height: '100%'
             }}
             onLoad={() => {
               console.log('Lottie animation loaded successfully')
