@@ -15,16 +15,18 @@ export default function WhitepaperPage() {
 
   // Chart data for interactive donut chart - All allocations
   const preminedData = [
-    // Preminted (10%)
-    { name: 'Team', value: 7, tokens: '280M DGC', color: '#6b7280' },
-    { name: 'Advisors', value: 3, tokens: '120M DGC', color: '#9ca3af' },
-    // Mintable (90%)
-    { name: 'Node Rewards (Validators)', value: 50, tokens: '2.0B DGC', color: '#374151' },
-    { name: 'Reserves & Contingency', value: 10, tokens: '400M DGC', color: '#4b5563' },
-    { name: 'Ecosystem Development Fund', value: 10, tokens: '400M DGC', color: '#6b7280' },
-    { name: 'Community Incentives & Airdrops', value: 8, tokens: '320M DGC', color: '#9ca3af' },
-    { name: 'Liquidity Provision', value: 6, tokens: '240M DGC', color: '#d1d5db' },
-    { name: 'Staking & Delegator Rewards', value: 6, tokens: '240M DGC', color: '#e5e7eb' }
+    // Preminted (67%)
+    { name: 'Team', value: 5, tokens: '200M DGC', color: '#6b7280' },
+    { name: 'Advisor', value: 2, tokens: '80M DGC', color: '#9ca3af' },
+    { name: 'Marketing & Community Airdrop', value: 6, tokens: '240M DGC', color: '#d1d5db' },
+    { name: 'Ecosystem Growth/ Grants', value: 5, tokens: '200M DGC', color: '#e5e7eb' },
+    { name: 'Contingency Reserves', value: 8, tokens: '320M DGC', color: '#4b5563' },
+    { name: 'Scalable Growth', value: 2, tokens: '80M DGC', color: '#f3f4f6' },
+    { name: 'Private Sale', value: 40, tokens: '1.6B DGC', color: '#374151' },
+    { name: 'DEX Liquidity', value: 2, tokens: '80M DGC', color: '#f9fafb' },
+    { name: 'Storage Node', value: 10, tokens: '400M DGC', color: '#6b7280' },
+    // Mintable (20%)
+    { name: 'Validator Node', value: 20, tokens: '800M DGC', color: '#9ca3af' }
   ];
 
   // State for active/selected chart segment
@@ -1986,15 +1988,15 @@ export default function WhitepaperPage() {
                     <div className="text-lg font-semibold text-gray-700">DGC Tokens</div>
                     <div className="mt-4 grid grid-cols-2 gap-4 text-center">
                       <div className="p-3 bg-white rounded-xl border border-gray-100">
-                        <div className="text-2xl font-bold text-gray-800">10%</div>
+                        <div className="text-2xl font-bold text-gray-800">67%</div>
                         <div className="text-xs text-gray-600">Preminted</div>
-                        <div className="text-sm font-semibold text-gray-700">400M DGC</div>
+                        <div className="text-sm font-semibold text-gray-700">2.68B DGC</div>
                         <div className="text-xs text-gray-500 mt-1">Initial distribution & operations</div>
                       </div>
                       <div className="p-3 bg-white rounded-xl border border-gray-100">
-                        <div className="text-2xl font-bold text-gray-700">90%</div>
+                        <div className="text-2xl font-bold text-gray-700">20%</div>
                         <div className="text-xs text-gray-600">Mintable</div>
-                        <div className="text-sm font-semibold text-gray-700">3.6B DGC</div>
+                        <div className="text-sm font-semibold text-gray-700">800M DGC</div>
                         <div className="text-xs text-gray-500 mt-1">Network rewards & incentives</div>
                       </div>
                     </div>
@@ -2012,15 +2014,15 @@ export default function WhitepaperPage() {
                     
                     <div className="mb-4 p-3 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg border border-gray-200 shadow-[inset_4px_4px_8px_rgba(163,177,198,0.15),inset_-4px_-4px_8px_rgba(255,255,255,0.8)]">
                       <p className="text-xs text-gray-600 leading-relaxed">
-                        <span className="font-semibold text-gray-800">Preminted (10%)</span> - Tokens created at launch for initial distribution and operations. 
-                        <span className="font-semibold text-gray-800 ml-2">Mintable (90%)</span> - Network rewards and incentives minted over time.
+                        <span className="font-semibold text-gray-800">Preminted (67%)</span> - Tokens created at launch for initial distribution and operations. 
+                        <span className="font-semibold text-gray-800 ml-2">Mintable (20%)</span> - Network rewards and incentives minted over time.
                       </p>
                     </div>
 
                     <div className="space-y-3">
                       {/* Preminted Allocations */}
                       <div className="bg-gray-50 rounded-lg p-3 border border-gray-200 shadow-[inset_4px_4px_8px_rgba(163,177,198,0.15),inset_-4px_-4px_8px_rgba(255,255,255,0.8)]">
-                        <div className="text-xs font-semibold text-gray-800 mb-2 uppercase tracking-wide">Preminted (10%)</div>
+                        <div className="text-xs font-semibold text-gray-800 mb-2 uppercase tracking-wide">Preminted (67%)</div>
                         <div className="space-y-2">
                           <div className="flex justify-between items-center p-2 bg-white rounded-lg border border-gray-100">
                             <div className="flex items-center space-x-2">
@@ -2028,18 +2030,88 @@ export default function WhitepaperPage() {
                               <span className="text-sm font-medium text-gray-700">Team</span>
                             </div>
                             <div className="text-right">
-                              <div className="text-sm font-bold text-gray-800">7%</div>
-                              <div className="text-xs text-gray-500">280M DGC</div>
+                              <div className="text-sm font-bold text-gray-800">5%</div>
+                              <div className="text-xs text-gray-500">200M DGC</div>
                             </div>
                           </div>
                           <div className="flex justify-between items-center p-2 bg-white rounded-lg border border-gray-100">
                             <div className="flex items-center space-x-2">
                               <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
-                              <span className="text-sm font-medium text-gray-700">Advisors</span>
+                              <span className="text-sm font-medium text-gray-700">Advisor</span>
                             </div>
                             <div className="text-right">
-                              <div className="text-sm font-bold text-gray-800">3%</div>
-                              <div className="text-xs text-gray-500">120M DGC</div>
+                              <div className="text-sm font-bold text-gray-800">2%</div>
+                              <div className="text-xs text-gray-500">80M DGC</div>
+                            </div>
+                          </div>
+                          <div className="flex justify-between items-center p-2 bg-white rounded-lg border border-gray-100">
+                            <div className="flex items-center space-x-2">
+                              <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
+                              <span className="text-sm font-medium text-gray-700">Marketing & Community Airdrop</span>
+                            </div>
+                            <div className="text-right">
+                              <div className="text-sm font-bold text-gray-800">6%</div>
+                              <div className="text-xs text-gray-500">240M DGC</div>
+                            </div>
+                          </div>
+                          <div className="flex justify-between items-center p-2 bg-white rounded-lg border border-gray-100">
+                            <div className="flex items-center space-x-2">
+                              <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
+                              <span className="text-sm font-medium text-gray-700">Ecosystem Growth/ Grants</span>
+                            </div>
+                            <div className="text-right">
+                              <div className="text-sm font-bold text-gray-800">5%</div>
+                              <div className="text-xs text-gray-500">200M DGC</div>
+                            </div>
+                          </div>
+                          <div className="flex justify-between items-center p-2 bg-white rounded-lg border border-gray-100">
+                            <div className="flex items-center space-x-2">
+                              <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
+                              <span className="text-sm font-medium text-gray-700">Contingency Reserves</span>
+                            </div>
+                            <div className="text-right">
+                              <div className="text-sm font-bold text-gray-800">8%</div>
+                              <div className="text-xs text-gray-500">320M DGC</div>
+                            </div>
+                          </div>
+                          <div className="flex justify-between items-center p-2 bg-white rounded-lg border border-gray-100">
+                            <div className="flex items-center space-x-2">
+                              <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
+                              <span className="text-sm font-medium text-gray-700">Scalable Growth</span>
+                            </div>
+                            <div className="text-right">
+                              <div className="text-sm font-bold text-gray-800">2%</div>
+                              <div className="text-xs text-gray-500">80M DGC</div>
+                            </div>
+                          </div>
+                          <div className="flex justify-between items-center p-2 bg-white rounded-lg border border-gray-100">
+                            <div className="flex items-center space-x-2">
+                              <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
+                              <span className="text-sm font-medium text-gray-700">Private Sale</span>
+                            </div>
+                            <div className="text-right">
+                              <div className="text-sm font-bold text-gray-800">40%</div>
+                              <div className="text-xs text-gray-500">1.6B DGC</div>
+                            </div>
+                          </div>
+                          <div className="flex justify-between items-center p-2 bg-white rounded-lg border border-gray-100">
+                            <div className="flex items-center space-x-2">
+                              <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
+                              <span className="text-sm font-medium text-gray-700">DEX Liquidity</span>
+                            </div>
+                            <div className="text-right">
+                              <div className="text-sm font-bold text-gray-800">2%</div>
+                              <div className="text-xs text-gray-500">80M DGC</div>
+                            </div>
+                          </div>
+                          <div className="flex justify-between items-center p-2 bg-white rounded-lg border border-gray-100">
+                            <div className="flex items-center space-x-2">
+                              <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
+                              <span className="text-sm font-medium text-gray-700">Storage Node</span>
+                            </div>
+                            <div className="text-right">
+                              <div className="text-sm font-bold text-gray-800">10%</div>
+                              <div className="text-xs text-gray-500">400M DGC</div>
                             </div>
                           </div>
                         </div>
@@ -2047,66 +2119,16 @@ export default function WhitepaperPage() {
 
                       {/* Mintable Rewards */}
                       <div className="bg-gray-50 rounded-lg p-3 border border-gray-200 shadow-[inset_4px_4px_8px_rgba(163,177,198,0.15),inset_-4px_-4px_8px_rgba(255,255,255,0.8)]">
-                        <div className="text-xs font-semibold text-gray-800 mb-2 uppercase tracking-wide">Mintable (90%)</div>
+                        <div className="text-xs font-semibold text-gray-800 mb-2 uppercase tracking-wide">Mintable (20%)</div>
                         <div className="space-y-2">
                           <div className="flex justify-between items-center p-2 bg-white rounded-lg border border-gray-100">
                             <div className="flex items-center space-x-2">
                               <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
-                              <span className="text-sm font-medium text-gray-700">Liquidity Provision</span>
+                              <span className="text-sm font-medium text-gray-700">Validator Node</span>
                             </div>
                             <div className="text-right">
-                              <div className="text-sm font-bold text-gray-800">6%</div>
-                              <div className="text-xs text-gray-500">240M DGC</div>
-                            </div>
-                          </div>
-                          <div className="flex justify-between items-center p-2 bg-white rounded-lg border border-gray-100">
-                            <div className="flex items-center space-x-2">
-                              <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
-                              <span className="text-sm font-medium text-gray-700">Reserves & Contingency</span>
-                            </div>
-                            <div className="text-right">
-                              <div className="text-sm font-bold text-gray-800">10%</div>
-                              <div className="text-xs text-gray-500">400M DGC</div>
-                            </div>
-                          </div>
-                          <div className="flex justify-between items-center p-2 bg-white rounded-lg border border-gray-100">
-                            <div className="flex items-center space-x-2">
-                              <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
-                              <span className="text-sm font-medium text-gray-700">Node Rewards (Validators)</span>
-                            </div>
-                            <div className="text-right">
-                              <div className="text-sm font-bold text-gray-800">50%</div>
-                              <div className="text-xs text-gray-500">2B DGC</div>
-                            </div>
-                          </div>
-                          <div className="flex justify-between items-center p-2 bg-white rounded-lg border border-gray-100">
-                            <div className="flex items-center space-x-2">
-                              <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
-                              <span className="text-sm font-medium text-gray-700">Staking & Delegator Rewards</span>
-                            </div>
-                            <div className="text-right">
-                              <div className="text-sm font-bold text-gray-800">6%</div>
-                              <div className="text-xs text-gray-500">240M DGC</div>
-                            </div>
-                          </div>
-                          <div className="flex justify-between items-center p-2 bg-white rounded-lg border border-gray-100">
-                            <div className="flex items-center space-x-2">
-                              <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
-                              <span className="text-sm font-medium text-gray-700">Ecosystem Development Fund</span>
-                            </div>
-                            <div className="text-right">
-                              <div className="text-sm font-bold text-gray-800">10%</div>
-                              <div className="text-xs text-gray-500">400M DGC</div>
-                            </div>
-                          </div>
-                          <div className="flex justify-between items-center p-2 bg-white rounded-lg border border-gray-100">
-                            <div className="flex items-center space-x-2">
-                              <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
-                              <span className="text-sm font-medium text-gray-700">Community Incentives & Airdrops</span>
-                            </div>
-                            <div className="text-right">
-                              <div className="text-sm font-bold text-gray-800">8%</div>
-                              <div className="text-xs text-gray-500">320M DGC</div>
+                              <div className="text-sm font-bold text-gray-800">20%</div>
+                              <div className="text-xs text-gray-500">800M DGC</div>
                             </div>
                           </div>
                         </div>
@@ -2217,7 +2239,7 @@ export default function WhitepaperPage() {
                   {/* Pre-Mined Allocations Table */}
                   <div className="neuro-inset p-6 rounded-2xl">
                     <div className="flex items-center space-x-2 mb-4">
-                      <h3 className="text-lg font-bold text-gray-800">Preminted Allocation (10%)</h3>
+                      <h3 className="text-lg font-bold text-gray-800">Preminted Allocation (67%)</h3>
                     </div>
                     
                     <div className="overflow-x-auto">
@@ -2239,21 +2261,105 @@ export default function WhitepaperPage() {
                               </div>
                               <div className="text-xs text-gray-500 mt-1">Long-term alignment of founding team</div>
                             </td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">7%</td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">280,000,000</td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">5%</td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">200,000,000</td>
                             <td className="py-3 px-2 text-xs text-gray-600">1-year cliff, then linear over 4 years</td>
                           </tr>
                           <tr className="hover:bg-gray-50 transition-colors">
                             <td className="py-3 px-2">
                               <div className="flex items-center space-x-2">
                                 <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
-                                <span className="font-medium text-gray-800">Advisors</span>
+                                <span className="font-medium text-gray-800">Advisor</span>
                               </div>
                               <div className="text-xs text-gray-500 mt-1">Strategic guidance from AI, Web3, enterprise</div>
                             </td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">3%</td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">120,000,000</td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">2%</td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">80,000,000</td>
                             <td className="py-3 px-2 text-xs text-gray-600">6-month cliff, then linear over 2 years</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50 transition-colors">
+                            <td className="py-3 px-2">
+                              <div className="flex items-center space-x-2">
+                                <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
+                                <span className="font-medium text-gray-800">Marketing & Community Airdrop</span>
+                              </div>
+                              <div className="text-xs text-gray-500 mt-1">Early Testnet users, contributors, AI creators</div>
+                            </td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">6%</td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">240,000,000</td>
+                            <td className="py-3 px-2 text-xs text-gray-600">Fair distribution and broad participation</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50 transition-colors">
+                            <td className="py-3 px-2">
+                              <div className="flex items-center space-x-2">
+                                <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
+                                <span className="font-medium text-gray-800">Ecosystem Growth/ Grants</span>
+                              </div>
+                              <div className="text-xs text-gray-500 mt-1">For R&D, grants, partnerships, and ecosystem expansion</div>
+                            </td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">5%</td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">200,000,000</td>
+                            <td className="py-3 px-2 text-xs text-gray-600">Via governance over time</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50 transition-colors">
+                            <td className="py-3 px-2">
+                              <div className="flex items-center space-x-2">
+                                <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
+                                <span className="font-medium text-gray-800">Contingency Reserves</span>
+                              </div>
+                              <div className="text-xs text-gray-500 mt-1">Treasury-managed, time-locked</div>
+                            </td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">8%</td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">320,000,000</td>
+                            <td className="py-3 px-2 text-xs text-gray-600">Buffer for expenses, listings, emergencies</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50 transition-colors">
+                            <td className="py-3 px-2">
+                              <div className="flex items-center space-x-2">
+                                <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
+                                <span className="font-medium text-gray-800">Scalable Growth</span>
+                              </div>
+                              <div className="text-xs text-gray-500 mt-1">Strategic expansion and scaling initiatives</div>
+                            </td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">2%</td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">80,000,000</td>
+                            <td className="py-3 px-2 text-xs text-gray-600">Future-proofing ecosystem growth</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50 transition-colors">
+                            <td className="py-3 px-2">
+                              <div className="flex items-center space-x-2">
+                                <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
+                                <span className="font-medium text-gray-800">Private Sale</span>
+                              </div>
+                              <div className="text-xs text-gray-500 mt-1">Strategic VCs, early backers, ecosystem partners</div>
+                            </td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">40%</td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">1,600,000,000</td>
+                            <td className="py-3 px-2 text-xs text-gray-600">TBD</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50 transition-colors">
+                            <td className="py-3 px-2">
+                              <div className="flex items-center space-x-2">
+                                <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
+                                <span className="font-medium text-gray-800">DEX Liquidity</span>
+                              </div>
+                              <div className="text-xs text-gray-500 mt-1">DEX + CEX liquidity pools at launch</div>
+                            </td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">2%</td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">80,000,000</td>
+                            <td className="py-3 px-2 text-xs text-gray-600">Healthy token trading and user access</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50 transition-colors">
+                            <td className="py-3 px-2">
+                              <div className="flex items-center space-x-2">
+                                <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
+                                <span className="font-medium text-gray-800">Storage Node</span>
+                              </div>
+                              <div className="text-xs text-gray-500 mt-1">Incentivizes storage node operators</div>
+                            </td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">10%</td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">400,000,000</td>
+                            <td className="py-3 px-2 text-xs text-gray-600">Decentralized storage infrastructure</td>
                           </tr>
                         </tbody>
                       </table>
@@ -2263,7 +2369,7 @@ export default function WhitepaperPage() {
                   {/* Mined Supply Table */}
                   <div className="neuro-inset p-6 rounded-2xl">
                     <div className="flex items-center space-x-2 mb-4">
-                      <h3 className="text-lg font-bold text-gray-800">Mintable Rewards (90%)</h3>
+                      <h3 className="text-lg font-bold text-gray-800">Mintable Rewards (20%)</h3>
                       <span className="text-sm text-gray-500">Minted over 10–12 years by ~50,000 nodes</span>
                     </div>
                     
@@ -2282,73 +2388,13 @@ export default function WhitepaperPage() {
                             <td className="py-3 px-2">
                               <div className="flex items-center space-x-2">
                                 <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
-                                <span className="font-medium text-gray-800">Liquidity Provision</span>
-                              </div>
-                              <div className="text-xs text-gray-500 mt-1">DEX + CEX liquidity pools at launch</div>
-                            </td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">6%</td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">240,000,000</td>
-                            <td className="py-3 px-2 text-xs text-gray-600">Locked for healthy token trading and user access</td>
-                          </tr>
-                          <tr className="hover:bg-gray-50 transition-colors">
-                            <td className="py-3 px-2">
-                              <div className="flex items-center space-x-2">
-                                <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
-                                <span className="font-medium text-gray-800">Reserves & Contingency</span>
-                              </div>
-                              <div className="text-xs text-gray-500 mt-1">Treasury-managed, time-locked</div>
-                            </td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">10%</td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">400,000,000</td>
-                            <td className="py-3 px-2 text-xs text-gray-600">Buffer for expenses, listings, emergencies</td>
-                          </tr>
-                          <tr className="hover:bg-gray-50 transition-colors">
-                            <td className="py-3 px-2">
-                              <div className="flex items-center space-x-2">
-                                <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
-                                <span className="font-medium text-gray-800">Node Rewards (Validators)</span>
+                                <span className="font-medium text-gray-800">Validator Node</span>
                               </div>
                               <div className="text-xs text-gray-500 mt-1">Incentivizes node uptime & validation</div>
                             </td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">50%</td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">2,000,000,000</td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">20%</td>
+                            <td className="py-3 px-2 text-center font-bold text-gray-800">800,000,000</td>
                             <td className="py-3 px-2 text-xs text-gray-600">Higher early emissions, declining curve</td>
-                          </tr>
-                          <tr className="hover:bg-gray-50 transition-colors">
-                            <td className="py-3 px-2">
-                              <div className="flex items-center space-x-2">
-                                <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
-                                <span className="font-medium text-gray-800">Staking & Delegator Rewards</span>
-                              </div>
-                              <div className="text-xs text-gray-500 mt-1">Rewards for stakers/delegators</div>
-                            </td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">6%</td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">240,000,000</td>
-                            <td className="py-3 px-2 text-xs text-gray-600">Encourages liquidity locking</td>
-                          </tr>
-                          <tr className="hover:bg-gray-50 transition-colors">
-                            <td className="py-3 px-2">
-                              <div className="flex items-center space-x-2">
-                                <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
-                                <span className="font-medium text-gray-800">Ecosystem Development Fund</span>
-                              </div>
-                              <div className="text-xs text-gray-500 mt-1">For R&D, grants, partnerships, and ecosystem expansion</div>
-                            </td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">10%</td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">400,000,000</td>
-                            <td className="py-3 px-2 text-xs text-gray-600">Via governance over time</td>
-                          </tr>
-                          <tr className="hover:bg-gray-50 transition-colors">
-                            <td className="py-3 px-2">
-                              <div className="flex items-center space-x-2">
-                                <div className="w-3 h-3 bg-gray-500 rounded-full"></div>
-                                <span className="font-medium text-gray-800">Community Incentives & Airdrops</span>
-                              </div>
-                              <div className="text-xs text-gray-500 mt-1">Early Testnet users, contributors, AI creators</div>
-                            </td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">8%</td>
-                            <td className="py-3 px-2 text-center font-bold text-gray-800">320,000,000</td>
-                            <td className="py-3 px-2 text-xs text-gray-600">Fair distribution and broad participation</td>
                           </tr>
                         </tbody>
                       </table>

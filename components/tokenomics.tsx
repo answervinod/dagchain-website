@@ -11,20 +11,97 @@ export function Tokenomics() {
   const tokenomicsData = {
     totalSupply: 4000000000,
     preminted: {
-      total: 400000000,
-      percentage: 10,
+      total: 2680000000,
+      percentage: 67,
       allocations: [
         {
-          name: "Private Sale & Pre-Sale",
+          name: "Team",
+          amount: 200000000, 
+          percentage: 5,
+          icon: Users,
+          details: {
+            vesting: "1-year cliff, then linear over 4 years",
+            role: "Long-term alignment of founding team",
+            narrative: "Multi-year delivery incentives"
+          }
+        },
+        {
+          name: "Advisor",
+          amount: 80000000,
+          percentage: 2,
+          icon: Users,
+          details: {
+            vesting: "6-month cliff, then linear over 2 years", 
+            role: "Strategic guidance from AI, Web3, enterprise",
+            narrative: "Industry expertise without oversizing"
+          }
+        },
+        {
+          name: "Marketing & Community Airdrop",
+          amount: 240000000,
+          percentage: 6,
+          icon: Users,
+          details: {
+            recipients: "Early Testnet users, contributors, AI creators",
+            role: "Fair distribution and broad participation",
+            narrative: "Rewards contributors, not speculators"
+          }
+        },
+        {
+          name: "Ecosystem Growth/ Grants",
+          amount: 200000000,
+          percentage: 5,
+          icon: TrendingUp,
+          details: {
+            grants: "AI-native projects, hackathons, integrations",
+            distribution: "Via governance over time", 
+            role: "For R&D, grants, partnerships, and ecosystem expansion",
+            narrative: "Fuels ecosystem growth"
+          }
+        },
+        {
+          name: "Contingency Reserves",
+          amount: 320000000,
+          percentage: 8,
+          icon: Lock,
+          details: {
+            management: "Treasury-managed, time-locked",
+            role: "Buffer for expenses, listings, emergencies",
+            narrative: "Financial resilience for governance"
+          }
+        },
+        {
+          name: "Scalable Growth",
+          amount: 80000000,
+          percentage: 2,
+          icon: TrendingUp,
+          details: {
+            role: "Strategic expansion and scaling initiatives",
+            narrative: "Future-proofing ecosystem growth"
+          }
+        },
+        {
+          name: "Private Sale",
+          amount: 1600000000,
+          percentage: 40,
+          icon: Users,
+          details: {
+            price: "Price: $0.40 per DGC token",
+            timeline: "Sale ends August 31, 2026",
+            vesting: "TBD",
+            participants: "Strategic VCs, early backers, ecosystem partners"
+          }
+        },
+        {
+          name: "Pre Sale",
           amount: 0,
           percentage: 0,
           icon: Users,
           details: {
-            privateSale: "Price: $0.40 per DGC token",
-            preSale: "4 Phases: $0.55, $0.60, $0.65, $0.70 per DGC",
+            phases: "4 Phases: $0.55, $0.60, $0.65, $0.70 per DGC",
             timeline: "Sale ends August 31, 2026",
-            vesting: "Private: TBD | Pre-Sale: 10% TGE, linear 24-36 months",
-            participants: "Strategic VCs, early backers, ecosystem partners"
+            vesting: "10% TGE, linear 24-36 months",
+            participants: "Early backers, ecosystem partners"
           }
         },
         {
@@ -40,31 +117,9 @@ export function Tokenomics() {
           }
         },
         {
-          name: "Team",
-          amount: 280000000, 
-          percentage: 7,
-          icon: Users,
-          details: {
-            vesting: "1-year cliff, then linear over 4 years",
-            role: "Long-term alignment of founding team",
-            narrative: "Multi-year delivery incentives"
-          }
-        },
-        {
-          name: "Advisors",
-          amount: 120000000,
-          percentage: 3,
-          icon: Users,
-          details: {
-            vesting: "6-month cliff, then linear over 2 years", 
-            role: "Strategic guidance from AI, Web3, enterprise",
-            narrative: "Industry expertise without oversizing"
-          }
-        },
-        {
-          name: "Liquidity Provision",
-          amount: 0,
-          percentage: 0,
+          name: "DEX Liquidity",
+          amount: 80000000,
+          percentage: 2,
           icon: BarChart3,
           details: {
             locked: "DEX + CEX liquidity pools at launch",
@@ -73,89 +128,31 @@ export function Tokenomics() {
           }
         },
         {
-          name: "Reserves & Contingency", 
-          amount: 0,
-          percentage: 0,
-          icon: Lock,
+          name: "Storage Node",
+          amount: 400000000,
+          percentage: 10,
+          icon: Coins,
           details: {
-            management: "Treasury-managed, time-locked",
-            role: "Buffer for expenses, listings, emergencies",
-            narrative: "Financial resilience for governance"
+            role: "Incentivizes storage node operators",
+            narrative: "Decentralized storage infrastructure"
           }
         }
       ]
     },
     mintable: {
-      total: 3600000000,
-      percentage: 90,
+      total: 800000000,
+      percentage: 20,
       allocations: [
         {
-          name: "Liquidity Provision",
-          amount: 240000000,
-          percentage: 6,
-          icon: BarChart3,
-          details: {
-            locked: "DEX + CEX liquidity pools at launch",
-            role: "Healthy token trading and user access",
-            narrative: "Controlled price discovery"
-          }
-        },
-        {
-          name: "Reserves & Contingency",
-          amount: 400000000,
-          percentage: 10,
-          icon: Lock,
-          details: {
-            management: "Treasury-managed, time-locked",
-            role: "Buffer for expenses, listings, emergencies",
-            narrative: "Financial resilience for governance"
-          }
-        },
-        {
-          name: "Node Rewards (Validators)",
-          amount: 2000000000,
-          percentage: 50,
+          name: "Validator Node",
+          amount: 800000000,
+          percentage: 20,
           icon: Coins,
           details: {
             timeline: "Minted over 10–12 years by ~50,000 nodes",
             curve: "Higher early emissions, declining curve",
             role: "Incentivizes node uptime & validation",
             narrative: "Community-owned, validator-powered blockchain"
-          }
-        },
-        {
-          name: "Staking & Delegator Rewards",
-          amount: 240000000,
-          percentage: 6,
-          icon: Lock,
-          details: {
-            incentives: "Token holders who delegate to validators",
-            effect: "Encourages liquidity locking",
-            role: "Rewards for stakers/delegators",
-            narrative: "Beyond direct validators"
-          }
-        },
-        {
-          name: "Ecosystem Development Fund",
-          amount: 400000000,
-          percentage: 10,
-          icon: TrendingUp,
-          details: {
-            grants: "AI-native projects, hackathons, integrations",
-            distribution: "Via governance over time", 
-            role: "For R&D, grants, partnerships, and ecosystem expansion",
-            narrative: "Fuels ecosystem growth"
-          }
-        },
-        {
-          name: "Community Incentives & Airdrops",
-          amount: 320000000,
-          percentage: 8,
-          icon: Users,
-          details: {
-            recipients: "Early Testnet users, contributors, AI creators",
-            role: "Fair distribution and broad participation",
-            narrative: "Rewards contributors, not speculators"
           }
         }
       ]
@@ -392,7 +389,7 @@ export function Tokenomics() {
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Preminted Overview */}
                 <div className="bg-gray-50 p-6 shadow-[inset_12px_12px_24px_rgba(163,177,198,0.2),inset_-12px_-12px_24px_rgba(255,255,255,0.8)] border border-gray-200 rounded-2xl">
-                  <h4 className="text-xl font-bold text-gray-900 mb-4 font-nasalization">Preminted (10%)</h4>
+                  <h4 className="text-xl font-bold text-gray-900 mb-4 font-nasalization">Preminted (67%)</h4>
                   <div className="space-y-3">
                     {tokenomicsData.preminted.allocations.filter(a => a.percentage > 0).map((allocation, index) => (
                       <div 
@@ -425,7 +422,7 @@ export function Tokenomics() {
 
                 {/* Mintable Overview */}
                 <div className="bg-gray-50 p-6 shadow-[inset_12px_12px_24px_rgba(163,177,198,0.2),inset_-12px_-12px_24px_rgba(255,255,255,0.8)] border border-gray-200 rounded-2xl">
-                  <h4 className="text-xl font-bold text-gray-900 mb-4 font-nasalization">Mintable (90%)</h4>
+                  <h4 className="text-xl font-bold text-gray-900 mb-4 font-nasalization">Mintable (20%)</h4>
                   <div className="space-y-3">
                     {tokenomicsData.mintable.allocations.map((allocation, index) => (
                       <div 
