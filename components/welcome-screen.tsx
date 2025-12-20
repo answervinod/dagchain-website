@@ -53,16 +53,9 @@ export function WelcomeScreen({ onComplete }: WelcomeScreenProps) {
     <div className="fixed inset-0 z-50 bg-white flex items-center justify-center">
 
       {/* Lottie Animation */}
-      <div className="w-full h-full flex items-center justify-center relative z-10 px-4" style={{ 
-        transform: 'translateZ(0)',
-        WebkitTransform: 'translateZ(0)'
-      }}>
+      <div className="w-full h-full flex items-center justify-center relative z-10 px-4">
         <motion.div 
           className="w-[400px] h-[400px] sm:w-[550px] sm:h-[550px] md:w-[700px] md:h-[700px] flex items-center justify-center"
-          style={{
-            transform: 'translateZ(0)',
-            WebkitTransform: 'translateZ(0)'
-          }}
           animate={{
             scale: shouldZoom ? 3 : 1
           }}
